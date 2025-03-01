@@ -1,0 +1,31 @@
+.states-list-cont {
+  list-style-type: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.search-state-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1cd4d429;
+  padding: 0px;
+  width: 70px;
+  margin-bottom: 10px;
+}
+.search-state-name {
+  color: #64748b;
+  font-size: 20px;
+  margin-right: 40px;
+}
+.search-link-icon {
+  color: #facc15;
+}
+.search-state-code {
+  color: #facc15;
+  margin-right: 10px;
+}
+.search-link {
+  text-decoration: none;
+}

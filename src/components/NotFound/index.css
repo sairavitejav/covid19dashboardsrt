@@ -1,0 +1,29 @@
+.not-found-container {
+  background-color: #161625;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-image {
+  width: 500px;
+  margin-bottom: 10px;
+}
+.not-found-header {
+  color: #cbd5e1;
+  font-size: 32px;
+}
+.not-found-desc {
+  color: #94a3b8;
+  font-size: 20px;
+}
+.not-found-btn {
+  background-color: #2563eb;
+  padding: 10px;
+  border-width: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+}

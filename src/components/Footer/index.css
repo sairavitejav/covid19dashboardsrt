@@ -1,0 +1,39 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.footer-logo {
+  width: 156;
+  height: 32;
+  top: 2776px;
+  left: 642px;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.footer-description {
+  width: 348;
+  height: 24;
+  top: 2832px;
+  left: 546px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #94a3b8;
+}
+.footer-logos {
+  display: flex;
+}
+.footer-icons {
+  font-size: 40px;
+  margin-right: 30px;
+  color: #cbd5e1;
+}

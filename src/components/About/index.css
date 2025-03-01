@@ -1,0 +1,34 @@
+.about-container {
+  min-height: 100vh;
+  background: #161625;
+  padding-bottom: 30px;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.about-inner-container {
+  padding: 20px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.about-header {
+  color: #f8fafc;
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+.about-line1 {
+  color: #94a3b8;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+.about-line2 {
+  color: #e2e8f0;
+  font-size: 24px;
+}
+.about-question-cont {
+  padding-left: 0px;
+}

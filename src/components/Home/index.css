@@ -1,0 +1,67 @@
+.home-container {
+  min-height: 100vh;
+  background: #161625;
+  padding-bottom: 30px;
+}
+.home-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.search-input-container {
+  display: flex;
+  background-color: #2f2f43;
+  align-items: center;
+  width: 824px;
+  height: 72px;
+  border-radius: 8px;
+}
+.search-icon {
+  margin-left: 20px;
+  margin-right: 10px;
+  color: #94a3b8;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  left: 32px;
+}
+.search-input {
+  background-color: #2f2f43;
+  border-width: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 750px;
+  color: #94a3b8;
+  outline: none;
+}
+.nation-wise-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.count-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.card1 {
+  color: #ff073a;
+}
+.card2 {
+  color: #007bff;
+}
+.card3 {
+  color: #28a745;
+}
+.card4 {
+  color: #6c757d;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}

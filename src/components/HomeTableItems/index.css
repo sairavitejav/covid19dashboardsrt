@@ -1,0 +1,34 @@
+.states-list-container {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 50px;
+}
+.state-name {
+  color: #f8fafc;
+  font-size: 20px;
+  width: 160px;
+}
+.counts-containers {
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+.confirmed {
+  color: #ff073a;
+}
+.active {
+  color: #007bff;
+}
+.recovered {
+  color: #28a745;
+}
+.deceased {
+  color: #6c757d;
+}
+.population {
+  color: #94a3b8;
+}
+.links-each {
+  text-decoration: none;
+}
