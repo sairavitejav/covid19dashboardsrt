@@ -6,11 +6,9 @@ import './index.css'
 export default function Footer() {
   return (
     <div className="footer-container">
-      <img
-        className="footer-logo"
-        src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740809526/COVID19INDIA_vgtlch.png"
-        alt="website logo"
-      />
+      <p className="logo">
+        COVID19<span className="special">INDIA</span>
+      </p>
       <p className="footer-description">
         we stand with everyone fighting on the front lines
       </p>

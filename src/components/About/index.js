@@ -14,18 +14,17 @@ const apiStatusConstants = {
 }
 
 class Home extends Component {
-  state = {stateData: [], apiStatus: apiStatusConstants.initial}
+  state = {faqsData: [], apiStatus: apiStatusConstants.initial}
 
   componentDidMount() {
-    this.getStateData()
+    this.getFaqsData()
   }
 
-  getStateData = async () => {
+  getFaqsData = async () => {
     this.setState({apiStatus: apiStatusConstants.loading})
     const response = await fetch('https://apis.ccbp.in/covid19-faqs')
     if (response.ok === true) {
       const data = await response.json()
-      console.log(data)
       const updatedData = data.faq.map(each => ({
         qno: each.qno,
         question: each.question,
@@ -33,7 +32,7 @@ class Home extends Component {
         category: each.category,
       }))
       this.setState({
-        stateData: updatedData,
+        faqsData: updatedData,
         apiStatus: apiStatusConstants.success,
       })
     } else {
@@ -42,8 +41,7 @@ class Home extends Component {
   }
 
   renderSuccessView = () => {
-    const {stateData} = this.state
-    console.log(stateData)
+    const {faqsData} = this.state
     return (
       <div className="about-inner-container">
         <h1 className="about-header">About</h1>
@@ -52,7 +50,7 @@ class Home extends Component {
           COVID-19 vaccines be ready for distribution
         </p>
         <ul testid="faqsUnorderedList" className="about-question-cont">
-          {stateData.map(eachData => (
+          {faqsData.map(eachData => (
             <FaqItem eachData={eachData} key={eachData.qno} />
           ))}
         </ul>
@@ -89,7 +87,9 @@ class Home extends Component {
   render() {
     return (
       <div className="about-container">
-        <Header />
+        <ul className="header-list-container">
+          <Header />
+        </ul>
         {this.renderDifferentViews()}
         <Footer />
       </div>

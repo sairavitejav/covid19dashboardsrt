@@ -5,17 +5,12 @@
   align-items: center;
   margin-top: 40px;
 }
-.footer-logo {
-  width: 156;
-  height: 32;
-  top: 2776px;
-  left: 642px;
-  font-family: Bree Serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0%;
-  text-align: center;
+.logo {
+  color: #f8fafc;
+  font-size: 20px;
+}
+.special {
+  color: #007bff;
 }
 .footer-description {
   width: 348;

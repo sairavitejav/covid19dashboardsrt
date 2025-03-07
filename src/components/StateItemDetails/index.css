@@ -1,0 +1,148 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.state-specific-container {
+  background-color: #161625;
+  min-height: 100vh;
+}
+.state-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.states-name {
+  background-color: #0284c729;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  font-size: 32px;
+  color: #0ea5e9;
+  width: 300px;
+}
+.state-last-update {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+.state-tests {
+  color: #94a3b8;
+  text-align: end;
+}
+.test-count-size {
+  font-size: 24px;
+}
+.test-head-size {
+  font-size: 16px;
+}
+.state-wise-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.state-count-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: 200px;
+  min-width: 200px;
+  border-radius: 20px;
+}
+.state-card1 {
+  color: #ff073a;
+}
+.state-card2 {
+  color: #007bff;
+}
+.state-card3 {
+  color: #28a745;
+}
+.state-card4 {
+  color: #6c757d;
+}
+button {
+  background-color: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  outline: none;
+}
+.confirmed-header {
+  color: #ff073a;
+}
+.active-header {
+  color: #007bff;
+}
+.recovered-header {
+  color: #28a745;
+}
+.deceased-header {
+  color: #6c757d;
+}
+.active-confirmed {
+  background-color: #331427;
+}
+.active-active {
+  background-color: #132240;
+}
+.active-recovered {
+  background-color: #182829;
+}
+.active-deceased {
+  background-color: #212230;
+}
+.top-districts-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.all-header {
+  padding-left: 30px;
+}
+.spread-trend-container {
+  padding: 30px;
+}
+.trends {
+  font-size: 32px;
+  color: #cbd5e1;
+}
+.confirmed-container {
+  background-color: #331427;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.active-container {
+  background-color: #132240;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.recovered-container {
+  background-color: #182829;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.deceased-container {
+  background-color: #1c1c2b;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.tested-container {
+  background-color: #230f41;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.header-list-container {
+  padding: 0px;
+  margin: 0px;
+}

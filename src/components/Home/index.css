@@ -65,3 +65,13 @@
   align-items: center;
   min-height: 80vh;
 }
+.search-filters-container {
+  width: 814px;
+}
+.header-list-container {
+  padding: 0px;
+  margin: 0px;
+}
+.card-list {
+  list-style-type: none;
+}

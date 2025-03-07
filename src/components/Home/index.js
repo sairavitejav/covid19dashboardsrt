@@ -273,49 +273,60 @@ class Home extends Component {
       <div>
         {searchInput.length === 0 ? (
           <>
-            <div className="nation-wise-cards">
-              <div
-                testid="countryWideConfirmedCases"
-                className="count-card card1"
-              >
-                <p>Confirmed</p>
-                <img
-                  src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740821266/check-mark_1_uqwcrq.png"
-                  alt="country wide confirmed cases pic"
-                />
-                <p>{totalConfirmed}</p>
-              </div>
-              <div testid="countryWideActiveCases" className="count-card card2">
-                <p>Active</p>
-                <img
-                  src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740821750/protection_1_l0vegg.png"
-                  alt="country wide active cases pic"
-                />
-                <p>{totalActive}</p>
-              </div>
-              <div
-                testid="countryWideRecoveredCases"
-                className="count-card card3"
-              >
-                <p>Recovered</p>
-                <img
-                  src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740821814/recovered_1_ykplcz.png"
-                  alt="country wide recovered cases pic"
-                />
-                <p>{totalRecovered}</p>
-              </div>
-              <div
-                testid="countryWideDeceasedCases"
-                className="count-card card4"
-              >
-                <p>Deceased</p>
-                <img
-                  src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740821871/breathing_1_rislje.png"
-                  alt="country wide deceased cases pic"
-                />
-                <p>{totalDeceased}</p>
-              </div>
-            </div>
+            <ul className="nation-wise-cards">
+              <li className="card-list">
+                <div
+                  testid="countryWideConfirmedCases"
+                  className="count-card card1"
+                >
+                  <p>Confirmed</p>
+                  <img
+                    src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740821266/check-mark_1_uqwcrq.png"
+                    alt="country wide confirmed cases pic"
+                  />
+                  <p>{totalConfirmed}</p>
+                </div>
+              </li>
+              <li className="card-list">
+                <div
+                  testid="countryWideActiveCases"
+                  className="count-card card2"
+                >
+                  <p>Active</p>
+                  <img
+                    src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740821750/protection_1_l0vegg.png"
+                    alt="country wide active cases pic"
+                  />
+                  <p>{totalActive}</p>
+                </div>
+              </li>
+              <li className="card-list">
+                <div
+                  testid="countryWideRecoveredCases"
+                  className="count-card card3"
+                >
+                  <p>Recovered</p>
+                  <img
+                    src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740821814/recovered_1_ykplcz.png"
+                    alt="country wide recovered cases pic"
+                  />
+                  <p>{totalRecovered}</p>
+                </div>
+              </li>
+              <li className="card-list">
+                <div
+                  testid="countryWideDeceasedCases"
+                  className="count-card card4"
+                >
+                  <p>Deceased</p>
+                  <img
+                    src="https://res.cloudinary.com/dxi9xkgna/image/upload/v1740821871/breathing_1_rislje.png"
+                    alt="country wide deceased cases pic"
+                  />
+                  <p>{totalDeceased}</p>
+                </div>
+              </li>
+            </ul>
             <HomeTable
               covidDataList={covidDataList}
               onSortAscending={this.onSortAscending}
@@ -323,7 +334,10 @@ class Home extends Component {
             />
           </>
         ) : (
-          <ul testid="searchResultsUnorderedList">
+          <ul
+            className="search-filters-container"
+            testid="searchResultsUnorderedList"
+          >
             {filteredList.map(eachState => (
               <SearchFilterItems
                 eachState={eachState}
@@ -366,7 +380,9 @@ class Home extends Component {
     const {searchInput} = this.state
     return (
       <div className="home-container">
-        <Header />
+        <ul className="header-list-container">
+          <Header />
+        </ul>
         <div className="home-inner-container">
           <div className="search-input-container">
             <BsSearch className="search-icon" />

@@ -10,17 +10,18 @@
 .header-links-container {
   display: flex;
 }
-.header-logo {
-  width: 130;
-  height: 24;
-  top: 28px;
-  left: 150px;
-  font-family: Bree Serif;
-  font-weight: 400;
+.logo {
+  color: #f8fafc;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: center;
+}
+.list {
+  list-style-type: none;
+}
+.special {
+  color: #007bff;
+}
+.link {
+  text-decoration: none;
 }
 .header-link {
   width: 43;
@@ -34,7 +35,8 @@
   letter-spacing: 0%;
   color: #94a3b8;
   margin-right: 20px;
-}
-.links {
   text-decoration: none;
+}
+.header-link.active {
+  color: #f8fafc;
 }
