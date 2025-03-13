@@ -11,25 +11,29 @@ export default function Header() {
           </p>
         </Link>
       </li>
-      <li className="header-links-container">
-        <NavLink
-          className={({isActive}) =>
-            isActive ? 'header-link active' : 'header-link'
-          }
-          exact
-          to="/"
-        >
-          Home
-        </NavLink>
-        <NavLink
-          className={({isActive}) =>
-            isActive ? 'header-link active' : 'header-link'
-          }
-          to="/about"
-        >
-          About
-        </NavLink>
-      </li>
+      <div className="header-links-container">
+        <li className="list">
+          <NavLink
+            className={({isActive}) =>
+              isActive ? 'header-link active' : 'header-link'
+            }
+            exact
+            to="/"
+          >
+            Home
+          </NavLink>
+        </li>
+        <li className="list">
+          <NavLink
+            className={({isActive}) =>
+              isActive ? 'header-link active' : 'header-link'
+            }
+            to="/about"
+          >
+            About
+          </NavLink>
+        </li>
+      </div>
     </nav>
   )
 }

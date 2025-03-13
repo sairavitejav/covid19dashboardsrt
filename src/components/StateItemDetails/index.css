@@ -26,9 +26,19 @@
   color: #0ea5e9;
   width: 300px;
 }
+@media screen and (max-width: 767px) {
+  .states-name {
+    width: 120px;
+  }
+}
 .state-last-update {
   color: #cbd5e1;
   font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+  .state-last-update {
+    font-size: 10px;
+  }
 }
 .state-tests {
   color: #94a3b8;
@@ -43,6 +53,7 @@
 .state-wise-cards {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .state-count-card {
@@ -52,9 +63,18 @@
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
-  min-height: 200px;
-  min-width: 200px;
+  height: 200px;
+  width: 200px;
   border-radius: 20px;
+}
+@media screen and (max-width: 767px) {
+  .state-count-card {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
 }
 .state-card1 {
   color: #ff073a;

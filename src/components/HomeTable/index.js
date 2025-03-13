@@ -33,19 +33,19 @@ const HomeTable = props => {
           </button>
         </div>
         <div>
-          <p className="table-header">Confirmed</p>
+          <p className="table-header1">Confirmed</p>
         </div>
         <div>
-          <p className="table-header">Active</p>
+          <p className="table-header1">Active</p>
         </div>
         <div>
-          <p className="table-header">Recovered</p>
+          <p className="table-header1">Recovered</p>
         </div>
         <div>
-          <p className="table-header">Deceased</p>
+          <p className="table-header1">Deceased</p>
         </div>
         <div>
-          <p className="table-header">Population</p>
+          <p className="table-header1">Population</p>
         </div>
       </div>
       <ul className="states-container">

@@ -2,6 +2,7 @@
   min-height: 100vh;
   background: #161625;
   padding-bottom: 30px;
+  width: 100%;
 }
 .loader-container {
   display: flex;
@@ -32,7 +33,7 @@
 .about-question-cont {
   padding-left: 0px;
 }
-.header-list-container {
+.about-list-container {
   padding: 0px;
   margin: 0px;
 }

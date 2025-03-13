@@ -2,33 +2,76 @@
   border: 1px solid #475569;
   background-color: #1e1e30;
   border-radius: 10px;
-  width: 1300px;
+}
+@media screen and (max-width: 767px) {
+  .table-container {
+    width: 90%;
+    margin-left: 18px;
+  }
 }
 .table-headers-container {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
 .order-icons-container {
   display: flex;
   align-items: center;
+  margin: 0px;
 }
 .order-icons {
   color: #94a3b8;
   margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .order-icons {
+    margin: 0px;
+    margin-right: 0px;
+    font-size: 6px;
+  }
 }
 .table-header {
   color: #f8fafc;
   font-size: 20px;
   margin-left: 40px;
   margin-right: 40px;
+  width: 100px;
+}
+@media screen and (max-width: 767px) {
+  .table-header {
+    font-size: 6px;
+    margin-left: 20px;
+    margin-right: 2px;
+    width: 30px;
+  }
+}
+.table-header1 {
+  color: #f8fafc;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 100px;
+}
+@media screen and (max-width: 767px) {
+  .table-header1 {
+    font-size: 6px;
+    margin-left: 2px;
+    margin-right: 20px;
+    width: 30px;
+  }
 }
 .states-container {
   border-top: 1px solid #475569;
   margin-top: 0px;
+}
+@media screen and (max-width: 767px) {
+  .states-container {
+    padding-left: 0px;
+  }
 }
 .sort-buttons {
   background-color: transparent;
   border-width: 0px;
   cursor: pointer;
   outline: none;
+  margin: 0px;
 }

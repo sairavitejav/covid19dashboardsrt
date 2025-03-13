@@ -1,6 +1,14 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
-import {LineChart, XAxis, YAxis, Tooltip, Legend, Line} from 'recharts'
+import {
+  LineChart,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  Line,
+  ResponsiveContainer,
+} from 'recharts'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import Header from '../Header'
 import DistrictItems from '../DistrictItems'
@@ -567,204 +575,204 @@ class StateItemDetails extends Component {
             <h1 className="trends">Daily Spread Trends</h1>
             <div testid="lineChartsContainer">
               <div className="confirmed-container">
-                <LineChart
-                  width={1300}
-                  height={300}
-                  data={timelineData}
-                  margin={{top: 5, right: 30, left: 20, bottom: 5}}
-                >
-                  <XAxis
-                    dataKey="date"
-                    tick={{fill: '#FF073A'}}
-                    tickLine={false}
-                    axisLine={{stroke: '#FF073A'}}
-                  />
-                  <YAxis
-                    tick={{fill: '#FF073A'}}
-                    axisLine={{stroke: '#FF073A'}}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: '#ffffff',
-                      color: '#FF073A',
-                      borderRadius: 8,
-                    }}
-                    itemStyle={{color: '#FF073A'}}
-                  />
-                  <Legend
-                    align="right"
-                    verticalAlign="top"
-                    iconType="circle"
-                    wrapperStyle={{color: '#FF073A'}}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="confirmed"
-                    stroke="#FF073A"
-                    strokeWidth={2}
-                    dot={{fill: '#FF073A', r: 4}}
-                  />
-                </LineChart>
+                <ResponsiveContainer width="100%" height={300}>
+                  <LineChart
+                    data={timelineData}
+                    margin={{top: 5, right: 30, left: 20, bottom: 5}}
+                  >
+                    <XAxis
+                      dataKey="date"
+                      tick={{fill: '#FF073A'}}
+                      tickLine={false}
+                      axisLine={{stroke: '#FF073A'}}
+                    />
+                    <YAxis
+                      tick={{fill: '#FF073A'}}
+                      axisLine={{stroke: '#FF073A'}}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#ffffff',
+                        color: '#FF073A',
+                        borderRadius: 8,
+                      }}
+                      itemStyle={{color: '#FF073A'}}
+                    />
+                    <Legend
+                      align="right"
+                      verticalAlign="top"
+                      iconType="circle"
+                      wrapperStyle={{color: '#FF073A'}}
+                    />
+                    <Line
+                      type="monotone"
+                      dataKey="confirmed"
+                      stroke="#FF073A"
+                      strokeWidth={2}
+                      dot={{fill: '#FF073A', r: 4}}
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
               </div>
               <div className="active-container">
-                <LineChart
-                  width={1300}
-                  height={300}
-                  data={timelineData}
-                  margin={{top: 5, right: 30, left: 20, bottom: 5}}
-                >
-                  <XAxis
-                    dataKey="date"
-                    tick={{fill: '#007BFF'}}
-                    tickLine={false}
-                    axisLine={{stroke: '#007BFF'}}
-                  />
-                  <YAxis
-                    tick={{fill: '#007BFF'}}
-                    axisLine={{stroke: '#007BFF'}}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: '#ffffff',
-                      color: '#007BFF',
-                      borderRadius: 8,
-                    }}
-                    itemStyle={{color: '#007BFF'}}
-                  />
-                  <Legend
-                    align="right"
-                    verticalAlign="top"
-                    iconType="circle"
-                    wrapperStyle={{color: '#007BFF'}}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="active"
-                    stroke="#007BFF"
-                    strokeWidth={2}
-                    dot={{fill: '#007BFF', r: 4}}
-                  />
-                </LineChart>
+                <ResponsiveContainer width="100%" height={300}>
+                  <LineChart
+                    data={timelineData}
+                    margin={{top: 5, right: 30, left: 20, bottom: 5}}
+                  >
+                    <XAxis
+                      dataKey="date"
+                      tick={{fill: '#007BFF'}}
+                      tickLine={false}
+                      axisLine={{stroke: '#007BFF'}}
+                    />
+                    <YAxis
+                      tick={{fill: '#007BFF'}}
+                      axisLine={{stroke: '#007BFF'}}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#ffffff',
+                        color: '#007BFF',
+                        borderRadius: 8,
+                      }}
+                      itemStyle={{color: '#007BFF'}}
+                    />
+                    <Legend
+                      align="right"
+                      verticalAlign="top"
+                      iconType="circle"
+                      wrapperStyle={{color: '#007BFF'}}
+                    />
+                    <Line
+                      type="monotone"
+                      dataKey="active"
+                      stroke="#007BFF"
+                      strokeWidth={2}
+                      dot={{fill: '#007BFF', r: 4}}
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
               </div>
               <div className="recovered-container">
-                <LineChart
-                  width={1300}
-                  height={300}
-                  data={timelineData}
-                  margin={{top: 5, right: 30, left: 20, bottom: 5}}
-                >
-                  <XAxis
-                    dataKey="date"
-                    tick={{fill: '#27A243'}}
-                    tickLine={false}
-                    axisLine={{stroke: '#27A243'}}
-                  />
-                  <YAxis
-                    tick={{fill: '#27A243'}}
-                    axisLine={{stroke: '#27A243'}}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: '#ffffff',
-                      color: '#27A243',
-                      borderRadius: 8,
-                    }}
-                    itemStyle={{color: '#27A243'}}
-                  />
-                  <Legend
-                    align="right"
-                    verticalAlign="top"
-                    iconType="circle"
-                    wrapperStyle={{color: '#27A243'}}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="recovered"
-                    stroke="#27A243"
-                    strokeWidth={2}
-                    dot={{fill: '#27A243', r: 4}}
-                  />
-                </LineChart>
+                <ResponsiveContainer width="100%" height={300}>
+                  <LineChart
+                    data={timelineData}
+                    margin={{top: 5, right: 30, left: 20, bottom: 5}}
+                  >
+                    <XAxis
+                      dataKey="date"
+                      tick={{fill: '#27A243'}}
+                      tickLine={false}
+                      axisLine={{stroke: '#27A243'}}
+                    />
+                    <YAxis
+                      tick={{fill: '#27A243'}}
+                      axisLine={{stroke: '#27A243'}}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#ffffff',
+                        color: '#27A243',
+                        borderRadius: 8,
+                      }}
+                      itemStyle={{color: '#27A243'}}
+                    />
+                    <Legend
+                      align="right"
+                      verticalAlign="top"
+                      iconType="circle"
+                      wrapperStyle={{color: '#27A243'}}
+                    />
+                    <Line
+                      type="monotone"
+                      dataKey="recovered"
+                      stroke="#27A243"
+                      strokeWidth={2}
+                      dot={{fill: '#27A243', r: 4}}
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
               </div>
               <div className="deceased-container">
-                <LineChart
-                  width={1300}
-                  height={300}
-                  data={timelineData}
-                  margin={{top: 5, right: 30, left: 20, bottom: 5}}
-                >
-                  <XAxis
-                    dataKey="date"
-                    tick={{fill: '#6C757D'}}
-                    tickLine={false}
-                    axisLine={{stroke: '#6C757D'}}
-                  />
-                  <YAxis
-                    tick={{fill: '#6C757D'}}
-                    axisLine={{stroke: '#6C757D'}}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: '#6C757D',
-                      color: '#6C757D',
-                      borderRadius: 8,
-                    }}
-                    itemStyle={{color: '#6C757D'}}
-                  />
-                  <Legend
-                    align="right"
-                    verticalAlign="top"
-                    iconType="circle"
-                    wrapperStyle={{color: '#6C757D'}}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="deceased"
-                    stroke="#6C757D"
-                    strokeWidth={2}
-                    dot={{fill: '#6C757D', r: 4}}
-                  />
-                </LineChart>
+                <ResponsiveContainer width="100%" height={300}>
+                  <LineChart
+                    data={timelineData}
+                    margin={{top: 5, right: 30, left: 20, bottom: 5}}
+                  >
+                    <XAxis
+                      dataKey="date"
+                      tick={{fill: '#6C757D'}}
+                      tickLine={false}
+                      axisLine={{stroke: '#6C757D'}}
+                    />
+                    <YAxis
+                      tick={{fill: '#6C757D'}}
+                      axisLine={{stroke: '#6C757D'}}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#ffffff',
+                        color: '#6C757D',
+                        borderRadius: 8,
+                      }}
+                      itemStyle={{color: '#6C757D'}}
+                    />
+                    <Legend
+                      align="right"
+                      verticalAlign="top"
+                      iconType="circle"
+                      wrapperStyle={{color: '#6C757D'}}
+                    />
+                    <Line
+                      type="monotone"
+                      dataKey="deceased"
+                      stroke="#6C757D"
+                      strokeWidth={2}
+                      dot={{fill: '#6C757D', r: 4}}
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
               </div>
               <div className="tested-container">
-                <LineChart
-                  width={1300}
-                  height={300}
-                  data={timelineData}
-                  margin={{top: 5, right: 30, left: 20, bottom: 5}}
-                >
-                  <XAxis
-                    dataKey="date"
-                    tick={{fill: '#9673B9'}}
-                    tickLine={false}
-                    axisLine={{stroke: '#9673B9'}}
-                  />
-                  <YAxis
-                    tick={{fill: '#9673B9'}}
-                    axisLine={{stroke: '#9673B9'}}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: '#9673B9',
-                      color: '#9673B9',
-                      borderRadius: 8,
-                    }}
-                    itemStyle={{color: '#9673B9'}}
-                  />
-                  <Legend
-                    align="right"
-                    verticalAlign="top"
-                    iconType="circle"
-                    wrapperStyle={{color: '#9673B9'}}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="tested"
-                    stroke="#9673B9"
-                    strokeWidth={2}
-                    dot={{fill: '#9673B9', r: 4}}
-                  />
-                </LineChart>
+                <ResponsiveContainer width="100%" height={300}>
+                  <LineChart
+                    data={timelineData}
+                    margin={{top: 5, right: 30, left: 20, bottom: 5}}
+                  >
+                    <XAxis
+                      dataKey="date"
+                      tick={{fill: '#9673B9'}}
+                      tickLine={false}
+                      axisLine={{stroke: '#9673B9'}}
+                    />
+                    <YAxis
+                      tick={{fill: '#9673B9'}}
+                      axisLine={{stroke: '#9673B9'}}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#ffffff',
+                        color: '#9673B9',
+                        borderRadius: 8,
+                      }}
+                      itemStyle={{color: '#9673B9'}}
+                    />
+                    <Legend
+                      align="right"
+                      verticalAlign="top"
+                      iconType="circle"
+                      wrapperStyle={{color: '#9673B9'}}
+                    />
+                    <Line
+                      type="monotone"
+                      dataKey="tested"
+                      stroke="#9673B9"
+                      strokeWidth={2}
+                      dot={{fill: '#9673B9', r: 4}}
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
               </div>
             </div>
           </div>

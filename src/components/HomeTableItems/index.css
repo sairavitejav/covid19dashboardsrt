@@ -1,33 +1,59 @@
 .states-list-container {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
   margin-right: 50px;
+}
+@media screen and (max-width: 767px) {
+  .states-list-container {
+    margin-right: 2px;
+    width: 80%;
+  }
 }
 .state-name {
   color: #f8fafc;
   font-size: 20px;
   width: 160px;
 }
+@media screen and (max-width: 767px) {
+  .state-name {
+    width: 35px;
+    font-size: 6px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+}
 .counts-containers {
   width: 200px;
   display: flex;
   justify-content: flex-end;
 }
+@media screen and (max-width: 767px) {
+  .counts-containers {
+    width: 70px;
+    margin-right: 2px;
+    text-align: right;
+    font-size: 6px;
+  }
+}
 .confirmed {
   color: #ff073a;
+  text-align: right;
 }
 .active {
   color: #007bff;
+  text-align: right;
 }
 .recovered {
   color: #28a745;
+  text-align: right;
 }
 .deceased {
   color: #6c757d;
+  text-align: right;
 }
 .population {
   color: #94a3b8;
+  text-align: right;
 }
 .links-each {
   text-decoration: none;

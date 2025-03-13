@@ -87,7 +87,7 @@ class Home extends Component {
   render() {
     return (
       <div className="about-container">
-        <ul className="header-list-container">
+        <ul className="about-list-container">
           <Header />
         </ul>
         {this.renderDifferentViews()}
